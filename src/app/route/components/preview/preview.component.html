@@ -1,0 +1,19 @@
+<h2>
+    {{ route.start }} -> {{ route.end }} (Prochain départ : {{ nextStart }})
+</h2>
+
+<p>
+    Partir de la gare de : {{ route.start }}.
+</p>
+
+<p>
+    Rester dans le train pendant {{ route.time }}
+</p>
+
+<p>
+    Descendre à la gare de {{ route.end }}.
+</p>
+
+<button (click)="onStartRoute()">
+    Démarrer le trajet
+</button>
