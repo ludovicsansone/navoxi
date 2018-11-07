@@ -1,3 +1,14 @@
-<p>
-  menu works!
-</p>
+<h2>
+    Préférences
+</h2>
+
+<div>
+    Enoncer automatiquement le délai de prochain passage : 
+    
+    <button (click)="onSetNextStartSpeech()">
+        {{ settingsService.getSettingCaption('nextStartSpeech') }}
+    </button>
+</div>
+<button (click)="settingsService.clearSettings()">
+    Réinitialiser les préférences
+</button>

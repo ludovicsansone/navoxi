@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService }  from '../../../common-services/settings.service';
 
 @Component({
   selector: 'settings-menu',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+  private settingsService: SettingsService) { }
 
   ngOnInit() {
   }
 
+  onSetNextStartSpeech() {
+      if (this.settingsService.getSettingValue('nextStartSpeech') == 'true')
+      this.settingsService.setOnOffSetting('nextStartSpeech', 'false', 'Désactivé');
+      else
+      this.settingsService.setOnOffSetting('nextStartSpeech', 'true', 'Activé');
+  }
 }

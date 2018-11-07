@@ -2,6 +2,10 @@
     {{ route.start }} -> {{ route.end }} (Prochain départ : {{ nextStart }})
 </h2>
 
+<button (click)="onRepeatNextStart()" *ngIf="settingsService.getSettingValue('nextStartSpeech') == 'true'">
+    Répéter le délai du prochain passage
+</button>
+
 <p>
     Partir de la gare de : {{ route.start }}.
 </p>

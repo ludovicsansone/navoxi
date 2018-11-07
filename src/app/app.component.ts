@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SettingsService } from './common-services/settings.service';
 
 @Component({
   selector: 'nvx-root',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit { 
+    
+    constructor(
+    private settingsService: SettingsService) { }
+
     ngOnInit() {
+        this.settingsService.initSettings();
     }
 }
