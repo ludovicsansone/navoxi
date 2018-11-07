@@ -25,7 +25,6 @@ export class RouteComponent implements OnInit {
       this.route = this.routeService.getRoute(this.quai);
       // this.step = this.routeService.getStep(this.routeIndex);
       this.onNextStep();
-
   }
 
   onRepeat() {

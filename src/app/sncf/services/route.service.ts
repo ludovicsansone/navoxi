@@ -9,10 +9,25 @@ export class RouteService {
     public route: any;
     public routes = [
     {place: 'A', steps: [
-    {position: 'Couloir central', major: '42', minor: '1', instruction: 'Suivez le couloir'},
-    {position: 'Escalier d\'accès au quai A', major: '42', minor: '2', instruction: 'tournez à 3 heures, et descendez l\'escalier'},
-    {position: 'Quai A', major: '42', minor: '3', instruction: 'Vous êtes arrivé. Le quai A est à votre droite'}
-    ]}
+    {position: 'couloir central', major: '42', minor: '1', instruction: 'suivez le couloir'},
+    {position: 'couloir central', major: '42', minor: '2', instruction: 'tournez à 3 heures, et descendez l\'escalier'},
+    {position: 'escalier d\'accès au quai A', major: '42', minor: '3', instruction: 'descendez l\'escalier'},
+    {position: 'Quai A', major: '42', minor: '4', instruction: 'Vous êtes arrivé. Le quai A est à votre gauche'}
+    ]},
+    {place: 'B', steps: [
+    {position: 'couloir central', major: '42', minor: '1', instruction: 'suivez le couloir'},
+    {position: 'couloir central', major: '42', minor: '2', instruction: 'Continuez à suivre le couloir'},
+    {position: 'couloir central', major: '42', minor: '5', instruction: 'tournez à 3 heures, et descendez l\escalier'}
+    {position: 'escalier d\'accès au quai B et C', major: '42', minor: '6', instruction: 'descendez l\escalier'}
+    {position: 'Quai B et C', major: '42', minor: '7', instruction: 'vous êtes arrivé, le quai B se trouve à votre droite'}
+    ]},
+    {place: 'C', steps: [
+    {position: 'couloir central', major: '42', minor: '1', instruction: 'suivez le couloir'},
+    {position: 'couloir central', major: '42', minor: '2', instruction: 'Continuez à suivre le couloir'},
+    {position: 'couloir central', major: '42', minor: '5', instruction: 'tournez à 3 heures, et descendez l\escalier'}
+    {position: 'escalier d\'accès au quai B et C', major: '42', minor: '6', instruction: 'descendez l\escalier'}
+    {position: 'Quai B et C', major: '42', minor: '7', instruction: 'vous êtes arrivé, le quai C se trouve à votre gauche'}
+    ]},
     ];
 
   constructor() { }

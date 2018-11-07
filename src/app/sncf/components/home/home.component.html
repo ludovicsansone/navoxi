@@ -6,7 +6,7 @@
     <ul id="train-list">
         <li id="train" *ngFor="let r of panel">
             <span (click)="onStart(r.destination, r.quai)">
-                {{ r.destination }} : Voie {{ r.quai }}
+                {{ r.destination }}, {{ r.numero }}, {{ r.heure }} : Voie {{ r.quai }}
             </span>
         </li>
     </ul>
