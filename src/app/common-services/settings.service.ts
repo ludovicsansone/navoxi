@@ -8,10 +8,8 @@ export class SettingsService {
   }
 
   initSettings() {
-      if (localStorage.length == 0) {
-          alert("Première utilisation");
+      if (localStorage.length == 0)
           this.setOnOffSetting('nextStartSpeech', 'true', 'Activé');
-  }
   }
 
   setOnOffSetting(name: string, value: string, caption: string) {
