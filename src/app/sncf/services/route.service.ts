@@ -17,15 +17,15 @@ export class RouteService {
     {place: 'B', steps: [
     {position: 'couloir central', major: '42', minor: '1', instruction: 'suivez le couloir'},
     {position: 'couloir central', major: '42', minor: '2', instruction: 'Continuez à suivre le couloir'},
-    {position: 'couloir central', major: '42', minor: '5', instruction: 'tournez à 3 heures, et descendez l\escalier'}
-    {position: 'escalier d\'accès au quai B et C', major: '42', minor: '6', instruction: 'descendez l\escalier'}
+    {position: 'couloir central', major: '42', minor: '5', instruction: 'tournez à 3 heures, et descendez l\escalier'},
+    {position: 'escalier d\'accès au quai B et C', major: '42', minor: '6', instruction: 'descendez l\'escalier'},
     {position: 'Quai B et C', major: '42', minor: '7', instruction: 'vous êtes arrivé, le quai B se trouve à votre droite'}
     ]},
     {place: 'C', steps: [
     {position: 'couloir central', major: '42', minor: '1', instruction: 'suivez le couloir'},
     {position: 'couloir central', major: '42', minor: '2', instruction: 'Continuez à suivre le couloir'},
-    {position: 'couloir central', major: '42', minor: '5', instruction: 'tournez à 3 heures, et descendez l\escalier'}
-    {position: 'escalier d\'accès au quai B et C', major: '42', minor: '6', instruction: 'descendez l\escalier'}
+    {position: 'couloir central', major: '42', minor: '5', instruction: 'tournez à 3 heures, et descendez l\escalier'},
+    {position: 'escalier d\'accès au quai B et C', major: '42', minor: '6', instruction: 'descendez l\escalier'},
     {position: 'Quai B et C', major: '42', minor: '7', instruction: 'vous êtes arrivé, le quai C se trouve à votre gauche'}
     ]},
     ];
