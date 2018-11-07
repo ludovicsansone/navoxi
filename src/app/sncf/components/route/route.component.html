@@ -1,0 +1,23 @@
+<h2>
+    Guidage vers le train pour {{ destination }}, sur la voie {{ quai }}
+<h2>
+
+<p>
+    {{ step.instruction }}
+</p>
+
+<button (click)="onRepeat()">
+    Répéter la dernière instruction
+</button>
+
+<p>
+    Position actuelle : {{ step.position }}
+</p>
+
+<button (click)="onNextStep()">
+    Balise suivante
+</button>
+
+<a routerLink="/sncf-home">    
+    Retour au panneau de gare
+</a>

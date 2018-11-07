@@ -10,6 +10,7 @@ export class TtsService {
   sayMessage(message: string) {
       // Enonciation du message placé en paramètre
       const vocalMessage = new SpeechSynthesisUtterance(message);
-      speechSynthesis.speak(vocalMessage);
+
+    speechSynthesis.speak(vocalMessage);
   }
 }

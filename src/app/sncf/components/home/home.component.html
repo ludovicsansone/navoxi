@@ -1,0 +1,13 @@
+<h2>
+    {{ station }}
+</h2>
+
+<div>
+    <ul>
+        <li *ngFor="let r of panel">
+            <span (click)="onStart(r.destination, r.quai)">
+                {{ r.destination }} : Voie {{ r.quai }}
+            </span>
+        </li>
+    </ul>
+</div>

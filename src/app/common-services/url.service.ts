@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class UrlService {
     currentPositionInfo: string = "https://ipinfo.io";
-    nextStart = 'http://navoxi.ludovicsansone.com/navoxi-api/web/station';
+    nextStart = 'http://dev.ludovicsansone.com/navoxi-api/web/station';
 
   constructor() { }
 }
