@@ -1,13 +1,22 @@
-<h2 id="view-title">
-    {{ station }}
-</h2>
-
 <div id="view-pannel">
-    <ul id="train-list">
-        <li id="train" *ngFor="let r of panel">
-            <span (click)="onStart(r.destination, r.quai)">
-                {{ r.destination }}, {{ r.numero }}, {{ r.heure }} : Voie {{ r.quai }}
-            </span>
-        </li>
-    </ul>
+
+	<div id="view-container">
+		<h2 class="view-title">
+		    {{ station }}
+		</h2>
+		<table id="train-list" cellpadding="0" cellspacing="0" border="0">
+			<tr id="train" *ngFor="let r of panel" (click)="onStart(r.destination, r.quai)">
+				<td class="train-type">T{{r.typeTrain}}</td>
+				<td class="train-hour">{{r.heure}}</td>
+				<td class="train-destination">
+					<span>
+						{{ r.destination }}
+					</span>
+				</td>
+				<td class="train-platform">
+					<span>{{ r.quai }}</span></td>
+				<br/>
+			</tr>
+		</table>
+	</div>
 </div>

@@ -17,9 +17,9 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
       this.panel = [
-      {destination: 'Valense Ville', numero: '886712', heure: '10:42', quai: 'A'},
-      {destination: 'Clermont-Ferrand', numero: '874442', heure: '10:54', quai: 'B'},
-      {destination: 'Paris Gare de Lyon', numero: '5146', heure: '11:08', quai: 'C'},
+      {destination: 'Valence Ville', numero: '886712', heure: '10h42', quai: 'A'},
+      {destination: 'Clermont-Ferrand', numero: '874442', heure: '10h54', quai: 'B'},
+      {destination: 'Paris Gare de Lyon', numero: '5146', heure: '11h08', quai: 'C'},
       ];
   }
 
