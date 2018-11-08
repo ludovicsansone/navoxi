@@ -1,3 +1,8 @@
+<!-- A designer comme un bouton retour -->
+<a class="return-link" routerLink="/sncf-home">    
+    Retour au panneau de gare
+</a>
+
 <h2 id="view-title">
     Guidage vers le train pour {{ destination }}, sur la voie {{ quai }}
 </h2>
@@ -16,10 +21,7 @@
     </p>
 
     <button id="next-step-button" (click)="onNextStep()">
-        Balise suivante
+        Marcher vers la balise suivante
     </button>
 
-    <a id="return-link" routerLink="/sncf-home">    
-        Retour au panneau de gare
-    </a>
 </div>

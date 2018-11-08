@@ -7,7 +7,7 @@ import { SettingsService } from './common-services/settings.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit { 
-    
+
     constructor(
     private settingsService: SettingsService) { }
 

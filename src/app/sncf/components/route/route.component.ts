@@ -23,7 +23,6 @@ export class RouteComponent implements OnInit {
       this.quai = this.routeService.quai;
       this.ttsService.sayMessage("Je vous emmène jusqu'au quai " + this.quai + ", pour prendre le train en direction de " + this.destination);
       this.route = this.routeService.getRoute(this.quai);
-      // this.step = this.routeService.getStep(this.routeIndex);
       this.onNextStep();
   }
 
@@ -37,9 +36,9 @@ export class RouteComponent implements OnInit {
       if (this.routeIndex < maxIndex) {
           this.routeIndex += 1;
           this.step = this.routeService.getStep(this.routeIndex);
-      this.ttsService.sayMessage(this.step.instruction);
+       this.ttsService.sayMessage(this.step.instruction);
       }
       else
-      this.ttsService.sayMessage("Vous êtes arrivé");
+          this.ttsService.sayMessage("Vous êtes arrivé");
   }
 }
